@@ -23,7 +23,7 @@ public class StringStack {
     }
 
     static class method {
-        private String[] stack = new String[10];
+        private String[] stack;
         private int top = -1;
 
         void push(String val){
@@ -41,7 +41,7 @@ public class StringStack {
             return val;
         }
 
-        
+
     }
 
 }
