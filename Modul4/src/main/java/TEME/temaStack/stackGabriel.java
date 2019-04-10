@@ -1,11 +1,19 @@
 package TEME.temaStack;
 
+import java.util.Scanner;
+
 public class stackGabriel {
     public static void main(String[] args){
 //        iCanDoIt();
-        ex2Impossible();
+//        ex2Impossible();
+//        ex3ReverseConsola();
+    }
 
-
+    private static void ex3ReverseConsola() {
+        StringStack myMethod = new StringStack(10);
+        Scanner s = new Scanner(System.in);
+        String myString = s.nextLine();
+        myMethod.method(myString);
     }
 
     private static void ex2Impossible() {

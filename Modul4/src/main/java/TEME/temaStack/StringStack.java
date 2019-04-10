@@ -33,8 +33,12 @@ public class StringStack {
         for(String element : desparte ){
             push(element);
         }
-        for( String element : desparte){
+        for(String element : desparte){
             System.out.print(pop() + " ");
         }
     }
+
+//    void reverse(String){
+//
+//    }
 }
