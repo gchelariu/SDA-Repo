@@ -28,49 +28,13 @@ public class StringStack {
         return val;
     }
 
-//    void method(String myMethode){
-//        push("done.");
-//        push("it's");
-//        push("until");
-//        push("impossible");
-//        push("seems");
-//        push("always");
-//        push("It");
-//        System.out.print(pop() + " ");
-//        System.out.print(pop() + " ");
-//        System.out.print(pop() + " ");
-//        System.out.print(pop() + " ");
-//        System.out.print(pop() + " ");
-//        System.out.print(pop() + " ");
-//        System.out.print(pop() + " ");
-//    }
-
-//    static class method {
-//        private int maxSize;
-//        private String[] stack;
-//        private int top;
-//
-//        public method(int a) {
-//            this.maxSize = a;
-//            stack = new String[maxSize];
-//            top = -1;
-//        }
-//        
-//        void push(String val){
-//            if (top == maxSize - 1){
-//                return;
-//            }
-//            top++;
-//            stack[top] = val;
-//        }
-//        String pop() {
-////        return stack[top--];
-////      SAU
-//            String val = stack[top];
-//            top = top - 1;
-//            return val;
-//        }
-//
-//    }
-
+    void method(String myMethode){
+        String[] desparte = myMethode.split(" ");
+        for(String element : desparte ){
+            push(element);
+        }
+        for( String element : desparte){
+            System.out.print(pop() + " ");
+        }
+    }
 }

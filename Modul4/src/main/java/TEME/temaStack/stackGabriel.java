@@ -2,11 +2,15 @@ package TEME.temaStack;
 
 public class stackGabriel {
     public static void main(String[] args){
-        iCanDoIt();
-//        StringStack.method myMethod = new StringStack.method();
-//        myMethod.method();
+//        iCanDoIt();
+        ex2Impossible();
 
 
+    }
+
+    private static void ex2Impossible() {
+        StringStack myMethod = new StringStack(10);
+        myMethod.method("done. it's until impossible seems always It");
     }
 
     private static void iCanDoIt() {
