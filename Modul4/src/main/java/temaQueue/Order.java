@@ -1,19 +1,21 @@
 package temaQueue;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Order {
-    private Date date;
+    private LocalDate date;
     private int quantity;
     private String item;
 
-    public Order(Date date, int quantity, String item){
+    public Order(LocalDate date, int quantity, String item){
         this.date = date;
         this.quantity = quantity;
         this.item = item;
     }
 
     public String toString(){
-        return getClass().getName() + "-" + Integer.toHexString(hashCode());
+        System.out.print(date + " - " + quantity + " - " + item);
+        return null;
     }
 }
