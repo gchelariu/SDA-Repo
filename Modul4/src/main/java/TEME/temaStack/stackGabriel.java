@@ -10,13 +10,13 @@ public class stackGabriel {
 
 //        StringStack cuvant = new StringStack(1);
 //        cuvant.reverse("atiatab");
-//    }
+    }
 
-//    private static void ex3ReverseConsola() {
-//        StringStack myMethod = new StringStack(10);
-//        Scanner s = new Scanner(System.in);
-//        String myString = s.nextLine();
-//        myMethod.method(myString);
+    private static void ex3ReverseConsola(){
+        StringStack myMethod = new StringStack(10);
+        Scanner s = new Scanner(System.in);
+        String myString = s.nextLine();
+        myMethod.method(myString);
     }
 
     private static void ex2Impossible(){
