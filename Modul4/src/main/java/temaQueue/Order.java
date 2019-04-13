@@ -1,7 +1,6 @@
 package temaQueue;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public class Order {
     private LocalDate date;
@@ -18,4 +17,11 @@ public class Order {
         System.out.print(date + " - " + quantity + " - " + item);
         return null;
     }
+
+//    private class OrderQueue(){
+//        Order myOrder;
+//        void enqueue(Order myOrder)(
+//
+//        }
+//    }
 }
