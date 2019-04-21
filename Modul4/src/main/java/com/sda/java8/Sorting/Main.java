@@ -8,11 +8,16 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        int[] myArray = {9, 8, 7, 5, 4, 1, 3, 234, 232, 12312};
-        QuickSort.quickSort(myArray);
+        quickSort();
 //        insertionSort();
 //        mergeSort();
 //        bubbleSort();
+    }
+
+    private static void quickSort() {
+        int[] myArray = {9, 8, 7, 5, 4, 1, 3, 234, 232, 12312};
+        QuickSort.quickSort(myArray, 0, myArray.length - 1);
+        QuickSort.printArray(myArray);
     }
 
     private static void insertionSort() {
