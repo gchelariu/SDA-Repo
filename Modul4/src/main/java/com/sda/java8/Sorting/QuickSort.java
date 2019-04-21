@@ -2,7 +2,7 @@ package com.sda.java8.Sorting;
 
 public class QuickSort {
 
-    public static void quickSort(int[] array, int start, int end) {
+    static void quickSort(int[] array, int start, int end) {
         if (start < end) {
             int q /*middle*/ = partition(array, start, end);
             quickSort(array, start, q - 1);
@@ -10,7 +10,7 @@ public class QuickSort {
         }
     }
 
-    public static int partition(int[] array, int start, int end) {
+    private static int partition(int[] array, int start, int end) {
         int x /*valoarePivot*/ = array[end];
         int i /*indexValoareMaiMicaPivot*/ = start - 1;
         for(int j = start; j <= (end-1); j++) {
