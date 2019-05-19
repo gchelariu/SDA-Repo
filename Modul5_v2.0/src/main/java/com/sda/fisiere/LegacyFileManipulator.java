@@ -39,9 +39,9 @@ public class LegacyFileManipulator implements IFileManipulator {
     }
 
     @Override
-    public void writeToFile(List<String> linesToWrite) {
+    public void writeToFile(List<String> linesToWrite, boolean append) {
             //astea din try("de aici") stiu sa se inchida singure (de aia putem sa le scriem singure intre ()
-        try(FileWriter fileWriter = new FileWriter(RELATIVE_PATH, true);
+        try(FileWriter fileWriter = new FileWriter(RELATIVE_PATH, append);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
             PrintWriter printWriter = new PrintWriter(bufferedWriter)){
 

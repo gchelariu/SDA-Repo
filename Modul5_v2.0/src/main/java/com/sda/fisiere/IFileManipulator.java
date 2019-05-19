@@ -9,9 +9,20 @@ import java.util.List;
 public interface IFileManipulator {
 
     String ABSOLUTE_PATH = "C:\\Users\\gabri\\Desktop\\absolutFile.txt";
-    String RELATIVE_PATH = IFileManipulator.class.getClassLoader().getResource("relativeFile.txt").getPath();
 
-    List<String> readFromFile (PathType pathType);
+    //Legacy
+//    String RELATIVE_PATH = IFileManipulator.class
+//            .getClassLoader()
+//            .getResource("relativeFile.txt")
+//            .getPath();
 
-    void writeToFile(List<String> linesToWrite);
+    //Modern
+    String RELATIVE_PATH = IFileManipulator.class
+            .getClassLoader()
+            .getResource("relativeFile.txt")
+            .getPath().replaceFirst("/", "");
+
+    List<String> readFromFile(PathType pathType);
+
+    void writeToFile(List<String> linesToWrite, boolean append);
 }
