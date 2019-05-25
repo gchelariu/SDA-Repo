@@ -7,14 +7,8 @@ import java.util.function.Predicate;
 public class Main {
 
     public static void main(String[] args) {
-            Person gigel = new Person("Gigel", 18);
-            Person dorel = new Person("Dorel", 15);
-            Person ionel = new Person("Ionel", 22);
 
-        List<Person> people = new LinkedList<>();
-        people.add(gigel);
-        people.add(dorel);
-        people.add(ionel);
+        List<Person> people = getPeople();
 
         Predicate<Person> isMajor = person -> person.getAge() > 18;
 
@@ -37,5 +31,17 @@ public class Main {
         ISalut obiect2 = () -> System.out.println("Hello coisane!");
         obiect.salut();
         obiect2.salut();
+    }
+
+    public static List<Person> getPeople() {
+        Person gigel = new Person("Gigel", 18);
+        Person dorel = new Person("Dorel", 15);
+        Person ionel = new Person("Ionel", 22);
+
+        List<Person> people = new LinkedList<>();
+        people.add(gigel);
+        people.add(dorel);
+        people.add(ionel);
+        return people;
     }
 }
