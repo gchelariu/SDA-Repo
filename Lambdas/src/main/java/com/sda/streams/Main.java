@@ -3,6 +3,7 @@ package com.sda.streams;
 import com.sda.lambdas.Person;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -61,6 +62,13 @@ public class Main {
                 .filter(isUnderAged)
                 .peek(System.out::println)
                 .collect(toList());
+
+        //vreau sa stiu daca Ionel este in lista
+        Optional<String> isIonelPresent = people.stream()
+                .map(Person::getName)
+                .filter(name -> name.equals("Ionel"))
+                .findAny();
+        isIonelPresent.ifPresent(string -> System.out.println("Este prezent"));
 
         //EXECMPLU pt ARRAY-uri:
 //        String[] myArray = {"1", "2"};
