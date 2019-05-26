@@ -43,7 +43,10 @@ public class ArrayTest {
 
     @Test
     public void testArrayWithAssertJ(){
-        //todo 
-        assertThat(target);
+        //todo
+        assertThat(target)
+                .hasSize(4)
+                .contains("Dorel")
+                .doesNotContain("Ion");
     }
 }
