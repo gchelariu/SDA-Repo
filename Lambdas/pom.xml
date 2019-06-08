@@ -22,6 +22,7 @@
     </build>
     <modules>
         <module>unittest</module>
+        <module>calculator</module>
     </modules>
 
 
