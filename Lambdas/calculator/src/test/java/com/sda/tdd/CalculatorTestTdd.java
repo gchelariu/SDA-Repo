@@ -2,6 +2,9 @@ package com.sda.tdd;
 
 import org.junit.Test;
 
+import java.util.LinkedList;
+import java.util.List;
+
 import static org.junit.Assert.assertEquals;
 
 public class CalculatorTestTdd {
@@ -32,5 +35,40 @@ public class CalculatorTestTdd {
     @Test (expected = IllegalArgumentException.class)
     public void test5() {
         target.add("-1,0");
+    }
+
+    //teste pentru produs mai sus
+
+    List<String> numbers = new LinkedList<>();
+
+    @Test
+    public void testProduct1() {
+        assertEquals(0, target.product(numbers));
+    }
+
+    @Test ( expected = IllegalArgumentException.class)
+    public void testProduct2() {
+        numbers.add("1");
+        numbers.add("2");
+        numbers.add("3");
+        target.product(numbers);
+    }
+
+    @Test
+    public void testProduct3(){
+        numbers.add("5");
+        numbers.add("10");
+        assertEquals(50, target.product(numbers));
+    }
+
+    @Test
+    public void testProduct4(){
+        numbers.add("1");
+        numbers.add("2");
+        numbers.add("20");
+        numbers.add("21");
+        numbers.add("5");
+        assertEquals(10, target.product(numbers));
+
     }
 }
