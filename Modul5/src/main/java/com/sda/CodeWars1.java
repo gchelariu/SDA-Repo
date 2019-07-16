@@ -11,7 +11,7 @@ public class CodeWars1 {
 //        findMissingLetter(array2);*/
 ////        validatePin("12p4");
 //
-////        getMiddle("PULA");
+////        getMiddle("mitocondria");
 
 
         String myString = "tu";
