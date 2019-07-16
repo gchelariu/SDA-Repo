@@ -10,7 +10,7 @@ public class CodeWars1 {
 //        findMissingLetter(array);
 //        findMissingLetter(array2);*/
 ////        validatePin("12p4");
-//
+//          NaN
 ////        getMiddle("mitocondria");
 
 
