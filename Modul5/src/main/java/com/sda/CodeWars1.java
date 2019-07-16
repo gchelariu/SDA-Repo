@@ -1,5 +1,7 @@
 package com.sda;
 
+import java.util.Scanner;
+
 public class CodeWars1 {
 
     public static void main(String[] args) {
@@ -19,7 +21,9 @@ public class CodeWars1 {
         System.out.println(myString2);
 
         ExInterviu test = new ExInterviu();
-        String pin = "fasdf1@23123a";
+        Scanner sc = new Scanner(System.in);
+        String pin = sc.next();
+
         if(test.verifyPin(pin)){
             System.out.println("E adevarat");
         } else {
