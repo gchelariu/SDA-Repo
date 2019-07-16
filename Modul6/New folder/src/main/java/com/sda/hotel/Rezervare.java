@@ -23,6 +23,7 @@ public class Rezervare implements Serializable,Comparable<Rezervare> {
             }
         }
 
+        //This is just as an example. You can do the same think without a additional method by putting .reversed() at the end.
         //Este doar ca exemplu. Poti face reversul prin a pune pur si simplu .reversed() la apelul anterior!
     public static class ComparatorByNameReverse implements Comparator<Rezervare>{
         @Override
