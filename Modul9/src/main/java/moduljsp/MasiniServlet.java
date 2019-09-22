@@ -11,7 +11,7 @@ import java.io.IOException;
 
 @WebServlet("/MasiniServlet")
 public class MasiniServlet extends HttpServlet {
-
+    CarService carService= new CarService();
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String brand = request.getParameter("brand");
@@ -20,8 +20,7 @@ public class MasiniServlet extends HttpServlet {
         Double km = Double.parseDouble(request.getParameter("km"));
 
         Car myCar = new Car(brand, type, year, km);
-        System.out.println(myCar);
-
+        carService.save(myCar);
         //todo: salveaza asta in baza de date cu jdbc
     }
 }
