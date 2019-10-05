@@ -21,7 +21,7 @@ public class CarService {
             prSt.setString(2, car.getType());
             prSt.setInt(3, car.getYear());
             prSt.setDouble(4, car.getKm());
-            
+
             int verificare = prSt.executeUpdate();
             if (verificare != 0) {
                 System.out.println("Added to the database");
