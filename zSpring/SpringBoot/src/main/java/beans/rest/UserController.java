@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/users")
+@RequestMapping(value = "")
 public class UserController {
 
     @RequestMapping(value = "", method = RequestMethod.GET)
