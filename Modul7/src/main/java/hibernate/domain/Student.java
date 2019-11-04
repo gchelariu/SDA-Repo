@@ -9,8 +9,8 @@ import java.util.Set;
 @Table(name = "student")
 @NamedQueries({
         @NamedQuery(name = "Student.getByLastName",
-        query = "select s from Student s where s.last_name " +
-                " = :numeFamilie ")
+                query = "select s from Student s where s.last_name " +
+                        " = :numeFamilie ")
 })
 public class Student {
 
