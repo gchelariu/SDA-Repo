@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.sda.intro</groupId>
-    <artifactId>intro-to-jvm</artifactId>
+    <artifactId>modul10-jvm</artifactId>
     <version>1.0-SNAPSHOT</version>
     <build>
         <plugins>
